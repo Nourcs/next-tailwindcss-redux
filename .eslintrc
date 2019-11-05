@@ -1,0 +1,49 @@
+{
+    "parser": "babel-eslint",
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended",
+        "airbnb"
+    ],
+    "plugins": [
+        "react",
+        "react-hooks",
+        "import"
+    ],
+    "rules": {
+        "require-jsdoc": 0,
+        "react/display-name": 0,
+        "no-console": 0,
+        "no-underscore-dangle": 0,
+        "react/forbid-prop-types": 0,
+        "react/jsx-one-expression-per-line": 0,
+        "react/no-array-index-key": 0,
+        "react/jsx-no-bind": 0,
+        "import/no-unresolved": [
+            1,
+            {
+                "ignore": [
+                    "components",
+                    "lib",
+                    "utils",
+                    "constants",
+                    "dredux",
+                    "styles"
+                ]
+            }
+        ],
+        "jsx-a11y/label-has-associated-control": [
+            2,
+            {
+                "controlComponents": [
+                    "Input",
+                    "Select"
+                ],
+            }
+        ]
+    },
+    "env": {
+        "node": true,
+        "browser": true,
+    }
+}
